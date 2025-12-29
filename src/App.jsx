@@ -11,12 +11,14 @@ import { Contato } from './pages/contato'
 import { Cardapio } from './pages/cardapio'
 import { Produto } from './pages/produto'
 import { Contador } from './pages/contador'
+import { CardCep } from './pages/cardCep'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/cep' element={<CardCep/>}/>
         <Route path='/contador' element={<Contador/>} />
         <Route path='/' element={<Home />} />
         <Route path='/contato' element={<Contato />} />
