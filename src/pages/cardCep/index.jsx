@@ -15,9 +15,9 @@ export const CardCep = () => {
     return (
         <>
             <h1>Consulta Cep 🔎</h1>
-            <form onSubmit={buscarCep}>
+            <form>
                 <input type="number" placeholder='Digite um CEP:'required value={cep} onChange={(e) => setCep(e.target.value)}/>
-                <button type="submit">Buscar</button>
+                <button type="submit" onClick={buscarCep}>Buscar</button>
             </form>        
 
         </>
